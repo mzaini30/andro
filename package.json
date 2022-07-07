@@ -1,6 +1,6 @@
 {
   "name": "andro",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Tools untuk generate aplikasi Android dari HTML",
   "scripts": {
     "pack": "tsx script/pack.ts",
@@ -10,7 +10,7 @@
     "dist"
   ],
   "bin": {
-    "andro": "dist/andro.js"
+    "andro": "dist/app.js"
   },
   "repository": {
     "type": "git",
