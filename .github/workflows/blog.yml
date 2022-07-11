@@ -3,6 +3,8 @@ name: Sisipkan blog
 on:
   push:
     branches: [master]
+  schedule:
+    - cron: "0 0 * * *"
 
 jobs:
   build:
@@ -22,6 +24,6 @@ jobs:
       - run: blog
       - uses: EndBug/add-and-commit@v7
         with:
-          message: "docs(readme): Bump download button version to ${{ steps.get-latest-release.outputs.tag_name }}"
+          message: "tambahkan blog di readme"
           default_author: github_actions
           branch: master
