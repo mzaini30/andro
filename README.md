@@ -31,9 +31,4 @@ vite build --base /assets/
 Lalu, generate dengan perintah `andro`.
 
 <!-- blog start -->
-
-## Blog
-
-- [Kenapa Pakai Iklan?](https://github.zenia.my.id/tulisan/iklan)
-
 <!-- blog end -->
