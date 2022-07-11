@@ -33,3 +33,6 @@ Lalu, generate dengan perintah `andro`.
 ## Discord
 
 https://s.id/discordzen
+
+<!-- blog start -->
+<!-- blog end -->
