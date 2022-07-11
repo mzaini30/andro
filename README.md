@@ -35,4 +35,8 @@ Lalu, generate dengan perintah `andro`.
 https://s.id/discordzen
 
 <!-- blog start -->
+## Blog
+
+- [Kenapa Pakai Iklan?](https://github.zenia.my.id/tulisan/iklan)
+
 <!-- blog end -->
