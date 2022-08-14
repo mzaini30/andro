@@ -1,6 +1,6 @@
 {
   "name": "andro",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Tools untuk generate aplikasi Android dari HTML",
   "scripts": {
     "pack": "tsx script/pack.ts",
