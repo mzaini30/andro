@@ -13,7 +13,6 @@ async function init(): Promise<void> {
       judul: string;
       admobApplication: string;
       admobBanner: string;
-      startAds: string;
       versi: number;
       id: string;
     };
@@ -74,16 +73,16 @@ async function init(): Promise<void> {
       /android:name="com.google.android.gms.ads.APPLICATION_ID" android:value=".+"/,
       `android:name="com.google.android.gms.ads.APPLICATION_ID" android:value="${data.admobApplication}"`
     );
-    ubah(
-      file.manifest,
-      /android:name="com.startapp.sdk.APPLICATION_ID" android:value=".+"/,
-      `android:name="com.startapp.sdk.APPLICATION_ID" android:value="${data.startAds}"`
-    );
-    ubah(
-      `andro/app/src/main/java/${idPecah[0]}/${idPecah[1]}/${idPecah[2]}/MainActivity.java`,
-      /StartAppSDK\.init\(this, ".+", false\);/,
-      `StartAppSDK.init(this, "${data.startAds}", false);`
-    );
+    // ubah(
+    //   file.manifest,
+    //   /android:name="com.startapp.sdk.APPLICATION_ID" android:value=".+"/,
+    //   `android:name="com.startapp.sdk.APPLICATION_ID" android:value="${data.startAds}"`
+    // );
+    // ubah(
+    //   `andro/app/src/main/java/${idPecah[0]}/${idPecah[1]}/${idPecah[2]}/MainActivity.java`,
+    //   /StartAppSDK\.init\(this, ".+", false\);/,
+    //   `StartAppSDK.init(this, "${data.startAds}", false);`
+    // );
     ubah(file.gradle, /versionCode .+/, `versionCode ${data.versi}`);
     ubah(file.gradle, /versionName ".+"/, `versionName "${data.versi}"`);
   }
