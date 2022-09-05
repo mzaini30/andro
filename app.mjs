@@ -1,22 +1,14 @@
 #!/usr/bin/env node
 import { writeFileSync, existsSync, readFileSync } from "fs";
-import template from "./template";
+import template from "./template.mjs";
 import { $ } from "zx";
 
 const { argv } = process;
 const { stringify, parse } = JSON;
 
-async function init(): Promise<void> {
+async function init() {
   if (argv.length == 2) {
-    type Data = {
-      folder: string;
-      judul: string;
-      admobApplication: string;
-      admobBanner: string;
-      versi: number;
-      id: string;
-    };
-    const data: Data = parse(readFileSync("andro.json").toString());
+    const data = parse(readFileSync("andro.json").toString());
     await $`rm -rf andro/app/src/main/assets`;
     await $`cp -r ${data.folder} andro/app/src/main/`;
     await $`mv andro/app/src/main/${data.folder} andro/app/src/main/assets`;
@@ -28,7 +20,7 @@ async function init(): Promise<void> {
       manifest: "andro/app/src/main/AndroidManifest.xml",
     };
 
-    function ubah(filenya: string, before: RegExp, after: string): void {
+    function ubah(filenya, before, after) {
       let mulai = readFileSync(filenya).toString();
       mulai = mulai.replace(before, after);
       writeFileSync(filenya, mulai);
@@ -94,8 +86,7 @@ async function init(): Promise<void> {
     if (!existsSync(".gitignore")) {
       writeFileSync(".gitignore", "andro");
     } else {
-      let isiGitignore: string | string[] =
-        readFileSync(".gitignore").toString();
+      let isiGitignore = readFileSync(".gitignore").toString();
       isiGitignore = isiGitignore.split("\n").filter((x) => x);
 
       if (!isiGitignore.includes("andro")) {
