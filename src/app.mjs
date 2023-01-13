@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import { writeFileSync, existsSync, readFileSync } from "fs";
 import template from "./template.mjs";
 import { $ } from "zx";

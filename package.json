@@ -1,15 +1,15 @@
 {
   "name": "andro",
-  "version": "2.2.3",
+  "version": "2.2.4",
   "description": "Tools untuk generate aplikasi Android dari HTML",
   "bin": {
-    "andro": "./dist/app.mjs"
+    "andro": "./dist/app.js"
   },
   "files": [
     "dist"
   ],
   "scripts": {
-    "prepublishOnly": "pkgroll --minify"
+    "prepublishOnly": "esbuild ./src/app.mjs --bundle --minify --outfile=./dist/app.js --platform=node"
   },
   "repository": {
     "type": "git",
@@ -28,6 +28,7 @@
   },
   "homepage": "https://github.com/mzaini30/andro#readme",
   "devDependencies": {
+    "esbuild": "^0.16.17",
     "zx": "^7.0.7"
   }
 }
