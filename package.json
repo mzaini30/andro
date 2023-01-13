@@ -1,9 +1,15 @@
 {
   "name": "andro",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "description": "Tools untuk generate aplikasi Android dari HTML",
   "bin": {
-    "andro": "app.mjs"
+    "andro": "./build/app.mjs"
+  },
+  "files": [
+    "./build/app.mjs"
+  ],
+  "scripts": {
+    "build": "esbuild ./src/app.mjs --bundle --minify --outfile=./build/app.mjs --platform=node"
   },
   "repository": {
     "type": "git",
@@ -21,7 +27,8 @@
     "url": "https://github.com/mzaini30/andro/issues"
   },
   "homepage": "https://github.com/mzaini30/andro#readme",
-  "dependencies": {
+  "devDependencies": {
+    "esbuild": "^0.16.17",
     "zx": "^7.0.7"
   }
 }
