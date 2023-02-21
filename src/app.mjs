@@ -96,7 +96,7 @@ async function init() {
     }
 
     if (!existsSync("andro")) {
-      await $`degit mzaini30/android-template andro`;
+      await $`pnpm degit mzaini30/android-template andro`;
     }
   }
 }

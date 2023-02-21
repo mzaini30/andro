@@ -9,7 +9,7 @@ https://youtu.be/AgsDgpfjoGI
 ## Install
 
 ```bash
-npm i -g andro degit
+pnpm i andro degit
 ```
 
 ## Init Project
