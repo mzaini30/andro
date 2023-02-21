@@ -1,13 +1,10 @@
 {
   "name": "andro",
-  "version": "2.2.5",
+  "version": "2.2.6",
   "description": "Tools untuk generate aplikasi Android dari HTML",
   "bin": {
     "andro": "./src/app.mjs"
   },
-  "files": [
-    "dist"
-  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mzaini30/andro.git"
