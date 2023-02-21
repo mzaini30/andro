@@ -24,7 +24,7 @@
     "url": "https://github.com/mzaini30/andro/issues"
   },
   "homepage": "https://github.com/mzaini30/andro#readme",
-  "devDependencies": {
+  "dependencies": {
     "zx": "^7.0.7"
   }
 }
