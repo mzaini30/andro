@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/mzaini30/andro#readme",
   "dependencies": {
+    "degit": "^2.8.4",
     "zx": "^7.0.7"
   }
 }

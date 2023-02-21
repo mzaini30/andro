@@ -9,13 +9,13 @@ https://youtu.be/AgsDgpfjoGI
 ## Install
 
 ```bash
-pnpm i andro degit
+pnpm i andro
 ```
 
 ## Init Project
 
 ```bash
-andro init
+pnpm andro init
 ```
 
 Otomatis, akan terbentuk file `andro.json` yang merupakan file config dan folder `andro` yang merupakan template Android Studio.
@@ -28,4 +28,4 @@ Sebelumnya, jika di HTML kita itu menggunakan absolute URL untuk memanggil file 
 vite build --base /assets/
 ```
 
-Lalu, generate dengan perintah `andro`.
+Lalu, generate dengan perintah `pnpm andro`.
