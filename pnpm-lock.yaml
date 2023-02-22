@@ -1,11 +1,9 @@
 lockfileVersion: 5.4
 
 specifiers:
-  degit: ^2.8.4
   zx: ^7.0.7
 
 dependencies:
-  degit: 2.8.4
   zx: 7.0.7
 
 packages:
@@ -72,12 +70,6 @@ packages:
   /data-uri-to-buffer/4.0.0:
     resolution: {integrity: sha512-Vr3mLBA8qWmcuschSLAOogKgQ/Jwxulv3RNE4FXnYWRGujzrRWQI4m12fQqRkwX06C0KanhLr4hK+GydchZsaA==}
     engines: {node: '>= 12'}
-    dev: false
-
-  /degit/2.8.4:
-    resolution: {integrity: sha512-vqYuzmSA5I50J882jd+AbAhQtgK6bdKUJIex1JNfEUPENCgYsxugzKVZlFyMwV4i06MmnV47/Iqi5Io86zf3Ng==}
-    engines: {node: '>=8.0.0'}
-    hasBin: true
     dev: false
 
   /dir-glob/3.0.1:

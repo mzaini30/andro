@@ -1,6 +1,6 @@
 {
   "name": "andro",
-  "version": "2.2.6",
+  "version": "2.2.7",
   "description": "Tools untuk generate aplikasi Android dari HTML",
   "bin": {
     "andro": "./src/app.mjs"
@@ -22,7 +22,6 @@
   },
   "homepage": "https://github.com/mzaini30/andro#readme",
   "dependencies": {
-    "degit": "^2.8.4",
     "zx": "^7.0.7"
   }
 }
