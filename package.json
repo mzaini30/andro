@@ -1,13 +1,13 @@
 {
   "name": "andro",
-  "version": "2.2.9",
+  "version": "3.0.0",
   "description": "Tools untuk generate aplikasi Android dari HTML",
   "bin": {
     "andro": "./dist/app.js"
   },
   "scripts": {
-"build": "esbuild ./src/app.mjs --bundle --outdir=dist --platform=node --minify",
-"prepublishOnly": "pnpm build"
+    "build": "esbuild ./src/app.mjs --bundle --outdir=dist --platform=node --minify",
+    "prepublishOnly": "pnpm build"
   },
   "repository": {
     "type": "git",
