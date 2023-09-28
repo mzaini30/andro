@@ -63,7 +63,7 @@ async function init() {
     );
     ubah(
       `andro/app/src/main/java/${idPecah[0]}/${idPecah[1]}/${idPecah[2]}/MainActivity.java`,
-      /\(this\.getApplication\(\), ".+")/,
+      /\(this\.getApplication\(\), ".+"\)/,
       `(this.getApplication(), "${data.admobOpen}")`
     );
     ubah(
