@@ -51,6 +51,12 @@ async function init() {
     );
 
     ubah(
+      `andro/app/src/main/java/${idPecah[0]}/${idPecah[1]}/${idPecah[2]}/AppOpenManager.java`,
+      /package .+;/,
+      `package ${data.id};`
+    );
+
+    ubah(
       file.strings,
       /<string name="app_name">.+<\/string>/,
       `<string name="app_name">${data.judul}</string>`
