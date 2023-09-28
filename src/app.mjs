@@ -62,6 +62,11 @@ async function init() {
       `<string name="app_name">${data.judul}</string>`
     );
     ubah(
+      `andro/app/src/main/java/${idPecah[0]}/${idPecah[1]}/${idPecah[2]}/MainActivity.java`,
+      /\(this\.getApplication\(\), ".+")/,
+      `(this.getApplication(), "${data.admobOpen}")`
+    );
+    ubah(
       file.layout,
       /ads:adUnitId=".+"/,
       `ads:adUnitId="${data.admobBanner}"`
