@@ -1,6 +1,6 @@
 {
   "name": "andro",
-  "version": "3.0.0",
+  "version": "4.0.0",
   "description": "Tools untuk generate aplikasi Android dari HTML",
   "bin": {
     "andro": "./dist/app.js"
