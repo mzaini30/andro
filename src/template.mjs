@@ -3,6 +3,7 @@ export default {
   judul: "Aplikasi",
   admobApplication: "ca-app-pub-3940256099942544~3347511713",
   admobBanner: "ca-app-pub-3940256099942544/6300978111",
+  admobInit: "ca-app-pub-3940256099942544/3419835294",
   versi: 1,
   id: "com.user.app",
 };
