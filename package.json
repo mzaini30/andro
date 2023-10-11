@@ -1,11 +1,11 @@
 {
   "name": "andro",
-  "version": "4.1.0",
+  "version": "4.1.1",
   "description": "Tools untuk generate aplikasi Android dari HTML",
   "bin": {
-    "andro": "./dist/app.js"
+    "andro": "./src/app.mjs"
   },
-  "scripts": {
+  "not-scripts": {
     "build": "esbuild ./src/app.mjs --bundle --outdir=dist --platform=node --minify",
     "prepublishOnly": "pnpm build"
   },
