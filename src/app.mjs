@@ -69,6 +69,11 @@ async function init() {
     );
     ubah(
       `andro/app/src/main/java/${idPecah[0]}/${idPecah[1]}/${idPecah[2]}/MainActivity.java`,
+      /RewardedAd\.load\(this, ".+",/,
+      `RewardedAd.load(this, "${data.admobReward}",`
+    );
+    ubah(
+      `andro/app/src/main/java/${idPecah[0]}/${idPecah[1]}/${idPecah[2]}/MainActivity.java`,
       /\(this\.getApplication\(\), ".+", "portrait"\)/,
       `(this.getApplication(), "${data.admobOpen}", "portrait")`
     );
@@ -76,11 +81,6 @@ async function init() {
       `andro/app/src/main/java/${idPecah[0]}/${idPecah[1]}/${idPecah[2]}/MainActivity.java`,
       /\(this\.getApplication\(\), ".+", "landscape"\)/,
       `(this.getApplication(), "${data.admobOpen}", "landscape")`
-    );
-    ubah(
-      `andro/app/src/main/java/${idPecah[0]}/${idPecah[1]}/${idPecah[2]}/MainActivity.java`,
-      /RewardedAd\.load\(this, ".+",/,
-      `RewardedAd.load(this, "${data.admobReward}",`
     );
     ubah(
       `andro/app/src/main/java/${idPecah[0]}/${idPecah[1]}/${idPecah[2]}/JavaScriptInterface.java`,
