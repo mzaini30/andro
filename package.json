@@ -1,6 +1,6 @@
 {
   "name": "andro",
-  "version": "4.1.5",
+  "version": "4.2.0",
   "description": "Convert HTML Project to Android Project",
   "bin": {
     "andro": "./src/app.mjs"

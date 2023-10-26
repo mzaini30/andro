@@ -78,6 +78,16 @@ async function init() {
       `(this.getApplication(), "${data.admobOpen}", "landscape")`
     );
     ubah(
+      `andro/app/src/main/java/${idPecah[0]}/${idPecah[1]}/${idPecah[2]}/MainActivity.java`,
+      /RewardedAd\.load\(this, ".+",/,
+      `RewardedAd.load(this, "${data.admobReward}",`
+    );
+    ubah(
+      `andro/app/src/main/java/${idPecah[0]}/${idPecah[1]}/${idPecah[2]}/JavaScriptInterface.java`,
+      /RewardedAd\.load\(context, ".+",/,
+      `RewardedAd.load(context, "${data.admobReward}",`
+    );
+    ubah(
       file.layout,
       /ads:adUnitId=".+"/,
       `ads:adUnitId="${data.admobBanner}"`
