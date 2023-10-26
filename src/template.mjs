@@ -6,5 +6,5 @@ export default {
   admobOpen: "ca-app-pub-3940256099942544/3419835294",
   versi: 1,
   id: "com.user.app",
-  docs: "https://kumpulan-tools.github.io/aplikasi/andro/",
+  docs: "https://andro-docs.github.io/",
 };
