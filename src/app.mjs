@@ -65,7 +65,7 @@ async function init() {
     ubah(
       file.strings,
       /<string name="app_name">.+<\/string>/,
-      `<string name="app_name">${data.judul}</string>`
+      `<string name="app_name">${data.title || data.judul}</string>`
     );
     ubah(
       `andro/app/src/main/java/${idPecah[0]}/${idPecah[1]}/${idPecah[2]}/MainActivity.java`,
@@ -87,8 +87,16 @@ async function init() {
       /android:name="com.google.android.gms.ads.APPLICATION_ID" android:value=".+"/,
       `android:name="com.google.android.gms.ads.APPLICATION_ID" android:value="${data.admobApplication}"`
     );
-    ubah(file.gradle, /versionCode .+/, `versionCode ${data.versi}`);
-    ubah(file.gradle, /versionName ".+"/, `versionName "${data.versi}"`);
+    ubah(
+      file.gradle,
+      /versionCode .+/,
+      `versionCode ${data.version || data.versi}`
+    );
+    ubah(
+      file.gradle,
+      /versionName ".+"/,
+      `versionName "${data.version || data.versi}"`
+    );
   }
   if (argv[2] && argv[2] == "init") {
     if (!existsSync("andro.json")) {
